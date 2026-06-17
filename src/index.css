@@ -7,16 +7,28 @@
 @theme {
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
 
-    --color-background: #0e0e10;
-    --color-surface: #1a1a1f;
-    --color-border: #2a2a32;
-    --color-text: #e4e4e7;
-    --color-accent: #22c55e;
+:root {
+    --background: #f8f8f9;
+    --surface:    #ffffff;
+    --border:     #e4e4e7;
+    --text:       #0e0e12;
+    --text-muted: #71717a;
+    --accent:     #16a34a;
+}
+
+:root.dark {
+    --background: #0e0e12;
+    --surface:    #1a1a20;
+    --border:     #2a2a35;
+    --text:       #e4e4e7;
+    --text-muted: #71717a;
+    --accent:     #22c55e;
 }
 
 body {
-    background-color: var(--color-background);
-    color: var(--color-text);
+    background-color: var(--background);
+    color: var(--text);
     font-family: var(--font-sans);
 }

@@ -33,7 +33,7 @@ function ApiClient() {
   const [reqState, setReqState] = useState<RequestState>({status: 'idle'})
   const [view, setView] = useState<'pretty' | 'raw'>('pretty')
 
-  const activeEndpoint = ENDPOINTS.find(e => e.path === active)!
+  // const activeEndpoint = ENDPOINTS.find(e => e.path === active)!
 
   async function handleSend() {
     setReqState({status: 'loading', startedAt: Date.now()})
